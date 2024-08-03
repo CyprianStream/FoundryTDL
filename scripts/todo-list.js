@@ -33,7 +33,7 @@ class ToDoListData {
   static createToDo(userId, toDoData) {
 	  // generate a random id for this new ToDo and populate the userId
 	  const newToDo = {
-		  isDone: false,
+		  isDone: false
 		  ...toDoData
 		  id: foundry.utils.randomID(16)
 		  userId
