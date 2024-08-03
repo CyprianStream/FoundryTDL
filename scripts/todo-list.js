@@ -26,7 +26,6 @@ class ToDoListData {
     
   };
 
-    return allToDos;
   }
   // get all todos for a given user
   static getToDosForUser(user.id) {
