@@ -32,7 +32,6 @@ class ToDoList {
     }
   }
 }
-}
 
 class ToDoListData {
   // all todos for all users
