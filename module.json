@@ -15,7 +15,7 @@
   "compatibility": {
     "minimum": "12",
     "verified": "12"
-  "name": "todo-list",
+  "id": "todo-list",
   "scripts": [
     "scripts/todo-list.js"
   ],
