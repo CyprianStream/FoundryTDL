@@ -18,6 +18,20 @@ class ToDoList {
   static TEMPLATES = {
     TODOLIST: `modules/${this.ID}/templates/todo-list.hbs`
   }
+   /**
+   * A small helper function which leverages developer mode flags to gate debug logs.
+   * 
+   * @param {boolean} force - forces the log even if the debug flag is not on
+   * @param  {...any} args - what to log
+   */
+  static log(force, ...args) {  
+    const shouldLog = force || game.modules.get('_dev-mode')?.api?.getPackageDebugValue(this.ID);
+
+    if (shouldLog) {
+      console.log(this.ID, '|', ...args);
+    }
+  }
+}
 }
 
 class ToDoListData {
