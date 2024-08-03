@@ -26,26 +26,26 @@ class ToDoListData {
     
   }
   // get all todos for a given user
-  static getToDosForUser(user.id) {
-	  return game.users.get(user.id)?.getFlag(ToDoList.ID,  ToDoList.FLAGS.TODOS);
+  static getToDosForUser(userId) {
+	  return game.users.get(userId)?.getFlag(ToDoList.ID,  ToDoList.FLAGS.TODOS);
   }
 
   // create a new todo for a given user
-  static createToDo(user.id, toDoData) {
+  static createToDo(userId, toDoData) {
 	  console.log("creating new todo")
 	  // generate a random id for this new ToDo and populate the userId
 	  const newToDo = {
 		isDone: false,
 		...toDoData,
 		id: foundry.utils.randomID(16),
-		user.id,
+		userId,
 	  }
 	  // construct the update to insert the new todo
 	  const newToDos = {
 		  [newToDo.id]: newToDo
 	  }
 	  // update the database with the new todos
-	  return  game.users.get(user.id)?.setFlag(ToDoList.ID, ToDoList.FLAGS.TODOS, newToDos);
+	  return  game.users.get(userId)?.setFlag(ToDoList.ID, ToDoList.FLAGS.TODOS, newToDos);
   }
 
   // update a specific todo by id with the provided updateData
