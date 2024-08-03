@@ -1,32 +1,33 @@
 {
-  "authors": [
-    {
-      "name": "Cyp"
-    }
-  ],
-  "description": "A simple module which adds a user specific to do list.",
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "compatibility": {
-    "minimum": "12",
-    "verified": "12"
-  "id": "todo-list",
-  "scripts": [
-    "scripts/todo-list.js"
-  ],
-  "styles": [
-    "styles/todo-list.css"
-  ],
-  "title": "To Don't",
-  "version": "1.0.5",
-   "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md"
+    "authors": [
+        {
+            "name": "Cyp"
+        }
+    ],
+    "description": "A simple module which adds a user specific to do list.",
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "12"
+    },
+    "id": "todo-list",
+    "scripts": [
+        "scripts/todo-list.js"
+    ],
+    "styles": [
+        "styles/todo-list.css"
+    ],
+    "title": "To Don't",
+    "version": "1.0.7",
+    "url": "#{URL}#",
+    "manifest": "#{MANIFEST}#",
+    "download": "#{DOWNLOAD}#",
+    "license": "LICENSE",
+    "readme": "README.md"
 }
