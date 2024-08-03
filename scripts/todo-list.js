@@ -46,7 +46,7 @@ class ToDoListData {
 		  isDone: false,
 		  ...toDoData,
 		  id: foundry.utils.randomID(16)
-		  user.id,
+		  get user.id,
 	  }
 	  // construct the update to insert the new todo
 	  const newToDos = {
