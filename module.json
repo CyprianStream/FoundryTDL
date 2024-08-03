@@ -21,5 +21,10 @@
     "styles/todo-list.css"
   ],
   "title": "To Don't",
-  "version": "1"
+  "version": "1",
+   "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md"
 }
